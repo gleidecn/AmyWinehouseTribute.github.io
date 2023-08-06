@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Esto ajustará el tamaño de la imagen para que cubra completamente el espacio disponible en el contenedor */
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Evitamos el desplazamiento horizontal */
+  background-image: url('assets/img/Amy2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px 0 10px;
+  color: #fff;
+}
+
+.title {
+  font-family: 'Edu SA Beginner', cursive;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.title__Amy {
+  font-size: 3.2rem;
+}
+
+.life {
+  font-family: 'Edu SA Beginner', cursive;
+  margin-left: 75px;
+}
+
+.icons {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.icons i {
+  margin-right: 7px;
+}
+
+.container--texto {
+  display: flex;
+  flex-direction: row; /* Cambiamos la dirección a vertical */
+  align-items: center; /* Centramos los elementos horizontalmente */
+  justify-content: space-between; /* Coloca el botón en la parte inferior */
+
+  color: rgba(36, 34, 34, 0.622);
+}
+
+.texto {
+  color: rgb(27, 26, 26);
+  width: 450px;
+  margin: 8px 10px;
+  padding: 20px;
+  font-family: 'Edu SA Beginner';
+  line-height: 1.4rem;
+}
+
+.texto__top {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.title__facts {
+  font-size: 1rem;
+}
+
+.text__list {
+  line-height: 1.4rem;
+  font-size: 1rem;
+  margin: 10px 0 10px 40px;
+}
+
+.demo {
+  color: rgb(249, 3, 3);
+}
+
+.destroyed {
+  line-height: 1rem;
+  background-color: rgba(233, 234, 236, 0.516);
+  color: rgb(27, 26, 26);
+}
+
+.demo__destroyed {
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: 200px;
+  /* height: 40px; */
+  margin: 100px 80px -300px; /* Ajustamos el margen para centrar verticalmente */
+  border: 2px solid rgba(29, 28, 28, 0.641);
+  border-radius: 10px;
+}
+
+.btn a {
+  display: block; /* Asegura que el enlace ocupe todo el espacio del botón */
+  text-decoration: none;
+  color: rgb(27, 26, 26);
+  font-family: 'Edu SA Beginner';
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 40px; /* Centra el texto verticalmente */
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(237, 53, 53);
+  border: none;
+}
+
+.btn:hover a {
+  color: #fff;
+}
