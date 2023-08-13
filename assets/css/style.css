@@ -10,6 +10,14 @@ body {
   margin: 0;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px 0 10px;
+  color: #fff;
+}
+
 /* Esto ajustará el tamaño de la imagen para que cubra completamente el espacio disponible en el contenedor */
 .cover img {
   width: 100%;
@@ -30,14 +38,6 @@ body {
   z-index: -1;
 }
 
-.name {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px 20px 0 10px;
-  color: #fff;
-}
-
 .title {
   font-family: 'Edu SA Beginner', cursive;
   font-weight: bold;
@@ -51,16 +51,6 @@ body {
 .life {
   font-family: 'Edu SA Beginner', cursive;
   margin-left: 75px;
-}
-
-.icons {
-  font-size: 1.4rem;
-  margin-top: 15px;
-  text-decoration: none;
-}
-
-.icons i {
-  margin-right: 7px;
 }
 
 .container--texto {
@@ -93,17 +83,18 @@ body {
 .text__list {
   line-height: 1.4rem;
   font-size: 1rem;
-  margin: 10px 0 10px 40px;
+  margin: 5px 0 10px 40px;
 }
 
 .demo {
-  color: rgb(249, 3, 3);
+  color: #e70c37e7;
 }
 
 .destroyed {
   line-height: 1rem;
   background-color: rgba(233, 234, 236, 0.516);
   color: rgb(27, 26, 26);
+  font-size: 1.1rem;
 }
 
 .demo__destroyed {
@@ -131,10 +122,63 @@ body {
 }
 
 .btn:hover {
-  background-color: rgb(237, 53, 53);
+  background-color: #e70c37e7;
   border: none;
 }
 
 .btn:hover a {
   color: #fff;
+}
+
+.footer {
+  /* margin-left: 1140px; */
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para dispositivos móviles (ejemplo: ancho máximo de 768px) */
+@media (max-width: 768px) {
+  body {
+    background-color: rgba(23, 22, 22, 0.646);
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cover {
+    position: static;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .container--texto {
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 10px; */
+  }
+
+  .texto {
+    width: 80%;
+    color: #fff;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 10px auto; /* Margen automático horizontal y 10px vertical */
+  }
+
+  .demo {
+    color: #e70c37e7;
+  }
+
+  .btn {
+    width: 50%;
+    margin: 5px auto; /* Margen automático horizontal y 20px vertical */
+  }
+
+  .footer {
+    color: #f7dfc6;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 20px 0 30px 0;
+  }
 }
